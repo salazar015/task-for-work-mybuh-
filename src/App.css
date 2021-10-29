@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;}
+/*--------------------*/
+
+body{
+	font-family: 'Inter', sans-serif;
+	font-size: 15px;
+	font-weight: 400;
+}
+.container{
+	max-width: 1200px;
+	padding: 0 30px;
+	margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.workers_header{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.workers .workers_header h2{
+	font-weight: bold;
+	font-size: 24px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.workers .workers_header button{
+	background: #FFFFFF;
+	border: 1px solid #DBDBDB;
+	border-radius: 3px;
+	padding: 13px 30px;
 }
-
-.App-link {
-  color: #61dafb;
+.workers .workers_header button img{
+	margin-right: 10px;
 }
+table{
+	border-collapse: collapse;
+	width: 1080px;
+	margin-top: 20px;
+	text-align: left;
+	
+ }
+ .workers_data{
+	 width: 1080px;
+	 margin: 0 auto;
+ }
+ .workers_data-header{
+	background: #F5F4F7;
+	font-weight: 500;
+	font-size: 16px;
+	color: #0B0B0B;
+ }
+ .workers_data-header td{
+	padding: 20px 0 20px 30px;
+ }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ .workers_data-button{
+  margin-top: 30px;
+}
+.workers_data-button button{
+ padding: 17px 30px;
+ border-radius: 15px;
+ font-weight: 600;
+ color: #676767;
+}
+.workers_data-button .active{
+ color: #FFFFFF;
+ background: #2782EE;
+}
+.workers_data-button button:not(:last-child){
+  margin-right: 15px;
 }

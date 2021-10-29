@@ -1,0 +1,49 @@
+td{
+	border: 1px solid  #E3E3E3;
+	vertical-align: top;
+	padding: 15px;
+ }
+
+ td ul{
+    display: flex;
+    flex-direction: column;
+}
+td ul li:not(:last-child){
+   margin-bottom: 15px;
+}
+td ul li{
+    display: flex;
+}
+td a{
+    display: flex;
+    flex-direction: column;
+    color: #2782EE;
+}
+td a:not(:last-child){
+    margin-bottom: 10px;
+}
+td a:last-child{
+    color:#F44343;
+}
+
+.salary{
+    margin-bottom: 10px;
+}
+
+.salary_flex{
+    display: flex;
+    justify-content: space-between;
+}
+.salary_flex img{
+    width: 18px;
+    height: 18px;
+}
+.salary_day{
+    font-size: 12px;
+    color: #999999;
+}
+.add_salary-btn{
+    color: #2782EE;
+    margin-top: 17px;
+    cursor: pointer;
+}
