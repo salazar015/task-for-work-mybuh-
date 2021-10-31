@@ -25,7 +25,7 @@ function App() {
                             <button><img src={ImgHeader} alt="#"></img> Добавить работника </button>
                         </div>
 
-                        <div class="workers_data">
+                        <div className="workers_data">
                             {
                                 date.length > 0
                                 ? <Table date={date} setDate={setDate} /> 
@@ -34,9 +34,9 @@ function App() {
                            
                         </div>
 
-                        <div class="workers_data-button">
+                        <div className="workers_data-button">
                             <button>Отменить</button>
-                            <button class="active">Сохранить</button>
+                            <button className="active">Сохранить</button>
                         </div>
 
                     </div>
