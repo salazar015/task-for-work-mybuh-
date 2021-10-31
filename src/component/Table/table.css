@@ -39,11 +39,32 @@ td a:last-child{
     height: 18px;
 }
 .salary_day{
+    margin-bottom: 10px;
     font-size: 12px;
     color: #999999;
 }
+
 .add_salary-btn{
+    width: 100%;
+    font-size: 15px;
     color: #2782EE;
-    margin-top: 17px;
+
+}
+.btn_action{
+    display: inline-block;
+    width: 100%;
+    color: #2782EE;
+    background-color: white;
+    
     cursor: pointer;
+}
+.btn_action:not(:last-child){
+    margin-bottom: 17px;
+}
+.btn_delete{
+    color: red;
+}
+
+.inputText {
+    border: 1px solid red;
 }
